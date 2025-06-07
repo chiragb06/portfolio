@@ -443,7 +443,7 @@ ul a li h4 {
 @keyframes textChange {
   0%,
   25% {
-    content: "marketing engineer 👩🏻‍🔬";
+    content: "marketing engineer 👨🏻‍🔬";
   }
   26%,
   50% {
@@ -862,7 +862,9 @@ ul a li h4 {
 
 .socials h1 {
   color: #3f72af;
+  font-size: 70px;
   text-shadow: 4px 4px #112d4e;
+  text-transform: capitalize !important;
 }
 
 .content p {
@@ -881,6 +883,7 @@ ul a li h4 {
   flex-direction: column;
   gap: 45px;
   padding-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .circles {
@@ -915,7 +918,8 @@ ul a li h4 {
 #instagramid,
 #youtubeid,
 #githubid,
-#linkedinid {
+#linkedinid,
+#whatsappid {
   position: relative;
   transition: all 0.1s ease-in;
 }
@@ -932,6 +936,14 @@ ul a li h4 {
 
   #instagram::after {
     opacity: 1;
+  }
+}
+#whatsappid:hover {
+  transform: scale(1.25) /* translateY(-10px) */;
+  box-shadow: 0px 0px 10px 2px #002657;
+  /* background: #cd201f; */
+  i {
+    color: #075e54;
   }
 }
 #youtubeid:hover {
@@ -1118,6 +1130,7 @@ ul a li h4 {
     background: #002657;
     padding: 20px;
     justify-content: center;
+    text-transform: capitalize !important;
 
     h1 {
       font-size: 50px;
